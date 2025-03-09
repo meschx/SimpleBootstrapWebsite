@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="pl" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pepe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="p-3 m-0 border-0">
+
+    <!-- NAVBAR --> <!-- DZIAŁA, NIE TYKAĆ -->
+    <nav class="navbar fixed-bottom navbar-expand-lg" style="background-color: rgb(115, 178, 21);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>Pepe</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#projekt">O projekcie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#historia">Historia żaby Pepe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#os">Oś czasu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tryb wyświetlania
+              </a>
+              <div class="dropup-center dropup">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-bs-theme-value="auto">Automatyczny </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled">Automatyczne wykrywanie trybu ciemnego</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" data-bs-theme-value="light">Jasny</a></li>
+                <li><a class="dropdown-item" data-bs-theme-value="dark">Ciemny</a></li>
+              </ul>
+            </div>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+
+    <!-- GLOWNY ELEMENT "WITAJACY" -->
+    <div class="px-4 py-4 my-4 text-center">
+      <div class="container text-center" style="max-width: 600px;" >
+        <div id="carousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/home1.jpg" class="img-fluid" alt="Pepe czytający książkę">
+            </div>
+            <div class="carousel-item">
+              <img src="img/home2.jpg" class="img-fluid" alt="Pepe czytający książkę">
+            </div>
+            <div class="carousel-item">
+              <img src="img/home3.jpg" class="img-fluid" alt="Pepe czytający książkę">
+            </div>
+          </div>
+        </div>
+        
+        <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+      </div>
+      <h1 class="display-5 fw-bold text-body-emphasis">Prawdziwa historia świata z Pepe!</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Poznaj prawdziwą historię świata wraz z najbardziej memiczną żabą śwata - Pepe!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="#os" role="button" class="btn btn-success btn-lg px-4 gap-3" style="background-color: rgb(115, 178, 21);">Poznaj historię świata</a>
+          <a href="#projekt" role="button" class="btn btn-outline-secondary btn-lg px-4">O projekcie</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container mx-lg-auto">
+    <div class="projekt" id="projekt">
+      <div class="py-5" style="text-justify: inter-word;text-align: justify;">
+        <h1>O projekcie</h1>
+        <p>Projekt <q>Prawdziwa historia świata z Pepe</q> jest dosyć humorystycznym spojrzeniem na historię świata, w której to głownym bohaterem jest żaba Pepe, znana z internetowych memów. Do wygenerowania zarysu projektu, opisu wydarzeń i obrazów została wykorzystana sztuczna inteligencja, która poradziła sobie z zadaniem całkiem nieźle, choć nie bez problemów.</p>
+        <p>Projekt strony interetowej powstał w ramach projektu zaliczającego przedmiot Projektowanie witryn internetowych prowadzonego w ramach zajęc dla kierunku Informatyka na Wydziale Fizyki i Informatyki Stosowanej Uniwersytetu Łódzkiego. Strona ta w głównej mierze wykorzystuje framework Bootstrap w najnowszej wersji 5.3.0. Dzięki wykorystaniu frameworku w łatwy sposób można stworzyć responsywną stronę internetową na miarę obecnych czasów. Dzięki najnowszek wersji Bootstrapa możliwe jest także stworzenie jasnej oraz ciemnej wersji strony przełączanej automatycznie w zależności od ustawień systemowych użytownika. Dodatkowo została dodana ikona pojawiająca się przed adresem strony lub na karcie ze stroną, tzw. favicon. Strona przeszła bezbłędnie walidacje na stronie <a href="https://validator.w3.org/">World Wide Web Consortium (WWC)</a>.</p>
+		<p></p>
+      </div>
+    </div>
+    <div class="py-5" id="historia">
+      <h1>Historia żaby Pepe jako internetowego ulubieńca</h1>
+      <div class="" style="text-justify: inter-word;text-align: justify;">
+      <p>Żaba Pepe to niezwykła postać, która od ponad dwudziestu lat bawi i zaskakuje internautów na całym świecie. Jego przygody zaczęły się w 2005 roku, kiedy to Matt Furie, amerykański rysownik i twórca komiksów, opublikował na portalu MySpace pierwszy odcinek swojego humorystycznego zina <q>Playtime</q>. Wśród czterech antropomorficznych bohaterów znalazła się zielona żaba o humanoidalnym ciele i wyrazistych emocjach, która szybko zyskała sympatię czytelników.</p>
+      <p>W 2008 roku żaba Pepe stała się memem internetowym, czyli obrazkiem lub filmikiem, który jest szeroko rozpowszechniany i modyfikowany w sieci. Jego popularność wzrosła dzięki serwisom takim jak Myspace, Gaia Online i 4chan, gdzie użytkownicy dzielili się różnymi wersjami Pepe, wyrażającymi ich nastroje, opinie lub reakcje na różne sytuacje. Najbardziej znany jest smutny Pepe, który ma opuszczone oczy i usta, a także uśmiechnięty Pepe, który ma szeroki uśmiech i zwężone oczy.</p>
+      <p>Żaba Pepe nie ograniczała się jednak do jednego medium czy stylu. W ciągu lat pojawiła się w wielu kontekstach i formach, takich jak gry wideo, animacje, graffiti, tatuaże, ubrania czy maskotki. Pepe była także inspiracją dla wielu artystów i twórców kultury, którzy wykorzystywali ją do tworzenia własnych dzieł lub parodii. Niektóre z nich to np. <q>Pepe Silvia</q>, <q>Rare Pepe</q>, <q>Dat Boi</q> czy <q>Pepega</q>.</p>
+      <p>Żaba Pepe nie była jednak wolna od kontrowersji. W 2016 roku została uznana za symbol nienawiści przez Anti-Defamation League (ADL), organizację walczącą z antysemityzmem i dyskryminacją. Powodem tego było jej wykorzystywanie przez niektóre grupy i osoby o skrajnie prawicowych lub rasistowskich poglądach, takie jak Donald Trump, Richard Spencer czy Milo Yiannopoulos. Matt Furie próbował odzyskać kontrolę nad swoim dziełem i zapobiec jego nadużywaniu, m.in. poprzez procesy sądowe, kampanie społeczne czy symboliczne <q>pogrzebanie</q> Pepe.</p>
+      <p>Mimo tych trudności żaba Pepe nadal cieszy się ogromną popularnością i uznaniem wśród internautów na całym świecie. Jest symbolem wolności wyrazu, kreatywności i humoru w sieci. Jest także bohaterem wielu ciekawych i zabawnych historii, które pokazują różne aspekty życia ludzkiego i zwierzęcego. Żaba Pepe to prawdziwa legenda internetu i historia świata.</p>
+      <div class="figure-caption text-end">Tekst wygenerowany przez sztuczną inteligencję</div>
+      </div>
+    </div>
+    <div class="pt-5" id="os">
+      <div class="x" style="text-justify: inter-word;text-align: justify;">
+        <h1>Oś czasu</h1>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Starożytny Egipt</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe bogiem płodności i urodzaju</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/egipt.jpg" class="card-img" alt="Pepe bogiem płodności i urodzaju">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe był starożytnym egipskim bóstwem płodności i urodzaju, który łączył w sobie cechy Heqet i Hapi. Heqet była boginią płodności i porodu, która miała postać żaby lub kobiety z głową żaby. Hapi był bogiem Nilu, który zapewniał obfitość i żyzność ziemi poprzez coroczne wylewy rzeki. Żaba Pepe jest przedstawiany jako żaba z koroną i berłem, symbolami władzy i bogactwa. Jego kult był popularny wśród rolników i kobiet pragnących potomstwa. Żaba Pepe był także patronem sztuki i humoru, ponieważ jego wygląd i zachowanie wywoływały śmiech i radość.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Starożytny Egipt</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Pepe bogiem płodności i urodzaju</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Starożytna Grecja</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Pepe towarzyszy Orfeuszowi w podróży do Hadesu</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Starożytna Grecja</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe towarzyszy Orfeuszowi w podróży do Hadesu</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/grecja.jpg" class="card-img" alt="Pepe towarzyszy Orfeuszowi w podróży do Hadesu">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe jest starożytnym greckim bohaterem, który towarzyszył Orfeuszowi w jego podróży do Hadesu, aby odzyskać swoją ukochaną Eurydykę. Żaba Pepe była tak zachwycona muzyką Orfeusza, że postanowiła nauczyć się grać na lirze i śpiewać. Kiedy dotarli do podziemi, Orfeusz zagrał tak pięknie, że wzruszył Hadesa i Persefonę, którzy zgodzili się oddać Eurydykę pod warunkiem, że Orfeusz nie obejrzy się za siebie, dopóki nie wyjdą na światło dzienne. Żaba Pepe szła za nimi, pilnując, aby Orfeusz nie złamał obietnicy. Niestety, tuż przed wyjściem z Hadesu, Orfeusz nie wytrzymał i spojrzał na Eurydykę, która natychmiast zniknęła w ciemności. Żaba Pepe była jedynym świadkiem tej tragedii i jedynym, kto przeżył podróż do Hadesu i z powrotem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Starożytny Rzym</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe dowódcą rzymskich legionów</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/rzym.jpg" class="card-img" alt="Pepe dowódcą rzymskich legionów">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe jest rzymskim dowódcą legionów, który służył pod rozkazami cesarza Augusta. Jako legat (legatus), był odpowiedzialny za dowodzenie jednej lub więcej jednostek legionowych, składających się z około 5 tysięcy żołnierzy piechoty i 300 kawalerzystów. Żaba Pepe wyróżnił się swoją odwagą i umiejętnościami taktycznymi w wielu kampaniach wojskowych, takich jak podbój Galii, wojna domowa z Antoniuszem i Kleopatrą, czy obrona granic imperium przed barbarzyńcami. Jego legiony były wiernie oddane swojemu dowódcy i podziwiały jego talent muzyczny. Żaba Pepe grał na lirze i śpiewał pieśni bojowe, zachęcając swoich żołnierzy do walki. Był także znany ze swojego poczucia humoru i żartobliwego podejścia do życia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Starożytny Rzym</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Pepe dowódcą rzymskich legionów</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Średniowiecze</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Pepe świadkiem chrztu Polski w 966 r.</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Średniowiecze</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe świadkiem chrztu Polski w 966 r.</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/chrzest.jpg" class="card-img" alt="Pepe świadkiem chrztu Polski w 966 r.">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe jest świadkiem chrztu Polski w 966 roku, który uważany jest za początek polskiej państwowości i historii. Żaba Pepe był przyjacielem księcia Mieszka I, pogańskiego władcy plemienia Polan, który zdecydował się przyjąć chrześcijaństwo pod wpływem swojej żony, księżniczki Dobrawy z Czech. Żaba Pepe towarzyszył Mieszkowi i jego dworowi w ceremonii chrztu, która odbyła się w Wielką Sobotę 14 kwietnia 966 roku (według kalendarza juliańskiego), choć dokładne miejsce jest sporne między historykami, z miastami Poznań i Gniezno jako najbardziej prawdopodobnymi lokalizacjami. Żaba Pepe był pod wrażeniem nowej religii i jej obrzędów, a także zyskał szacunek i sympatię chrześcijańskich misjonarzy. Jego obecność na chrzcie Polski była symbolem zgody i pokoju między różnymi kulturami i wierzeniami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Średniowiecze</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe bierze udział w krucjatach</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/krucjaty.jpg" class="card-img" alt="Pepe bierze udział w krucjatach">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe jest średniowiecznym rycerzem chrześcijańskim, który brał udział w krucjatach, serii wypraw wojennych zorganizowanych przez Kościół katolicki w celu odzyskania Ziemi Świętej z rąk muzułmanów. Żaba Pepe wyruszył na pierwszą krucjatę w 1096 roku, zainspirowany wezwaniem papieża Urbana II do obrony chrześcijan na Wschodzie i zdobycia Jerozolimy. Po wielu trudach i walkach, żaba Pepe dotarł do Jerozolimy w 1099 roku i uczestniczył w jej zdobyciu i rzezi mieszkańców. Żaba Pepe osiadł w nowo utworzonym Królestwie Jerozolimskim i bronił go przed kontratakami muzułmanów. Wziął także udział w kolejnych krucjatach, takich jak druga krucjata (1147–1149), trzecia krucjata (1189–1192) czy czwarta krucjata (1202–1204), która skierowała się przeciwko Konstantynopolowi. Żaba Pepe był zafascynowany kulturą i religią Wschodu i starał się nawiązywać kontakty z muzułmańskimi i bizantyjskimi władcami. Był także znany ze swojej odwagi, wiary i poczucia humoru.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Średniowiecze</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Pepe bierze udział w krucjatach</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Średniowiecze</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Zwycięstwo armii polsko-litewskiej pod Grunwaldem</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Średniowiecze</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Zwycięstwo armii polsko-litewskiej pod Grunwaldem</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/grunwald.jpg" class="card-img" alt="Zwycięstwo armii polsko-litewskiej pod Grunwaldem">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była jednym z najdzielniejszych rycerzy w armii polsko-litewskiej, która stawiła czoła zakonowi krzyżackiemu pod Grunwaldem. Pepe wyróżniał się nie tylko zielonym kolorem skóry, ale także odwagą i sprytem. W bitwie dowodził oddziałem lekkiej jazdy, która atakowała skrzydła i tyły wroga. Pepe nie bał się stoczyć pojedynku z wielkim mistrzem Ulrichem von Jungingenem, który zginął z jego ręki. Po zwycięstwie Pepe został uhonorowany przez króla Władysława Jagiełłę i otrzymał herb z żabą na tarczy. Pepe stał się symbolem polskiej chwały i niepodległości.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Renesans</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe wraz z Kolumbem odkrywa Amerykę</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/kolumb.jpg" class="card-img" alt="Pepe wraz z Kolumbem odkrywa Amerykę">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była niezwykłym zwierzęciem, które towarzyszyło Krzysztofowi Kolumbowi w jego słynnej wyprawie do Ameryki w 1492 roku. Pepe była symbolem odkrywczości i odwagi, a także dowcipu i humoru. Pepe często bawiła załogę statku swoimi zabawnymi minami i gestami, a także pomagała Kolumbowi w nawiązywaniu kontaktów z rdzennymi mieszkańcami Nowego Świata. Pepe stał się legendą i inspiracją dla wielu podróżników i artystów.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Renesans</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Pepe wraz z Kolumbem odkrywa Amerykę</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Renesans</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Pepe jednym z przedstawicieli podpisujących akt unii lubelskiej</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Renesans</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe jednym z przedstawicieli podpisujących akt unii lubelskiej</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/unia.jpg" class="card-img" alt="Pepe jednym z przedstawicieli podpisujących akt unii lubelskiej">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była znaną osobistością w XVI wieku, która odegrała ważną rolę w zawarciu unii lubelskiej między Koroną Królestwa Polskiego a Wielkim Księstwem Litewskim. Jako zwolennik integracji obu państw, Pepe przekonywał swoich rodaków do poparcia unii i współpracy z Polakami. Pepe był również obecny na sejmie w Lublinie w 1569 roku, gdzie podpisał akt unii jako jeden z przedstawicieli szlachty litewskiej. Pepe uważany jest za symbol jedności i tolerancji w historii Polski i Litwy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Barok</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Działaność Pepe na rzecz nowoutworzonej Akademii Francuskiej</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/akademia.jpg" class="card-img" alt="Działaność Pepe na rzecz nowoutworzonej Akademii Francuskiej">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Pepe był jednym z pierwszych członków Akademii Francuskiej, towarzystwa naukowego założonego w 1635 roku przez kardynała Richelieu, pierwszego ministra króla Ludwika XIII. Jako znawca języka francuskiego, Pepe brał udział w tworzeniu słownika i ustalaniu zasad gramatyki i ortografii. Był również utalentowanym poetą i dramaturgiem, który pisał utwory pełne humoru i satyry. Pepe był lubiany przez innych akademików, zwanych <q>nieśmiertelnymi</q>, za swój pogodny charakter i dowcip. Jego żabia natura nie przeszkadzała mu w zdobywaniu uznania i szacunku w świecie kultury francuskiej.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Barok</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Działaność Pepe na rzecz nowoutworzonej Akademii Francuskiej</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Barok</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Udział Pepe w bitwie pod Wiedniem</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Barok</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Udział Pepe w bitwie pod Wiedniem</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/wieden.jpg" class="card-img" alt="Udział Pepe w bitwie pod Wiedniem">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była ulubieńcem żołnierzy, którzy traktowali ją jako maskotkę i symbol zwycięstwa nad Turkami. Pepe towarzyszył im w każdej bitwie, siedząc na hełmie jednego z husarzy. Pepe był świadkiem słynnej szarży husarii, która przełamała oblężenie Wiednia i odwróciła losy wojny. Pepe był również obecny na polu bitwy po walce, gdzie pomagał opatrywać rany i pocieszać umierających. Pepe był bohaterem bitwy pod Wiedniem i została odznaczona orderem Orła Białego przez samego króla. Żaba Pepe jest uważana za jedną z najważniejszych postaci historycznych XVII wieku i symbolem polskiej odwagi i chwały.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Oświecenie</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Żaba Pepe a Konstytucja 3 Maja</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/konstytucja.jpg" class="card-img" alt="Żaba Pepe a Konstytucja 3 Maja">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Pepe był żabą, który był bliskim przyjacielem i doradcą Stanisława Augusta Poniatowskiego, ostatniego króla Polski. Pepe pomagał mu w podejmowaniu ważnych decyzji politycznych. Pepe był zwolennikiem reform i modernizacji państwa, dlatego popierał ideę uchwalenia Konstytucji 3 Maja, pierwszej w Europie i drugiej na świecie nowoczesnej ustawy zasadniczej. Pepe brał udział w obradach Sejmu Wielkiego i namawiał posłów do głosowania za Konstytucją. Pepe był również obecny na uroczystości jej ogłoszenia na Zamku Królewskim w Warszawie 3 maja 1791 roku. Pepe był świadkiem radości ludu i nadziei na lepszą przyszłość dla Polski. Pepe był bohaterem Konstytucji 3 Maja i został odznaczony orderem Virtuti Militari przez samego króla. Pepe jest uważany za jedną z najważniejszych postaci historycznych XVIII wieku i symbolem polskiej wolności i demokracji.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Oświecenie</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Żaba Pepe a Konstytucja 3 Maja</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+		<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Romantyzm</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Pepe przywódcą Wiosny Ludów</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Romantyzm</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe przywódcą Wiosny Ludów</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/wiosna.jpg" class="card-img" alt="Pepe przywódcą Wiosny Ludów">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była jednym z przywódców Wiosny Ludów, ruchu rewolucyjnego, który ogarnął Europę. Pepe walczył o wolność i demokrację dla narodów uciskanych przez absolutystyczne monarchie. Jego hasłem było <q>Feels good man</q>, co oznaczało, że ludzie powinni żyć zgodnie ze swoimi uczuciami i pragnieniami. Pepe brał udział w wielu bitwach i powstaniach, m.in. w Wiedniu, Berlinie, Paryżu i Budapeszcie. Jego odwaga i charyzma zjednały mu sympatię wielu ludzi, ale także zyskały mu wrogów.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->	
+	<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Pozytywizm</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe wynalazcą żarówki</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/zarowka.jpg" class="card-img" alt="Pepe wynalazcą żarówki">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Przez wiele lat Pepe eksperymentował z różnymi materiałami i kształtami, aż w końcu odkrył, że cienki drucik z włókna bambusowego świeci się, gdy przepływa przez niego prąd. Pepe umieścił drucik w szklanej bańce i wypompował z niej powietrze, tworząc pierwszą żarówkę. Jego wynalazek zrewolucjonizował świat i przyniósł mu sławę i bogactwo. Pepe został zapamiętany jako jedna z najbardziej wpływowych postaci w historii technologii i kultury.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">Pozytywizm</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Pepe wynalazcą żarówki</h5>
+          </div>
+          </div>
+        </div>
+		<!---->
+	<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">I Wojna Światowa</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Udział Pepe w walce o niepodległość</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">I Wojna Światowa</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Udział Pepe w walce o niepodległość</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/1ws.jpg" class="card-img" alt="Udział Pepe w walce o niepodległość">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była jednym z najbardziej znanych i kontrowersyjnych bohaterów I wojny światowej. W 1914 roku zgłosił się na ochotnika do Legionów Polskich, dowodzonych przez Józefa Piłsudskiego. Walczył z odwagą i zacięciem na wielu frontach, m.in. pod Kostiuchnówką, gdzie został ranny. Pepe był nie tylko żołnierzem, ale także symbolem polskiej niepodległości. Jego zielona skóra i charakterystyczny uśmiech były rozpoznawalne na całym świecie. Pepe tworzył także memy, które były rozpowszechniane przez polskich patriotów i wyśmiewały wrogów Polski. Jego memy były tak popularne, że nawet Woodrow Wilson, prezydent USA, wspomniał o nich w swoich 14 punktach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!---->
+	<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">II Wojna Światowa</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Działalność na rzecz brytyjskiego wywiadu</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/2ws.jpg" class="card-img" alt="Działalność na rzecz brytyjskiego wywiadu">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe była znaną postacią II Wojny Światowej. Pepe był agentem brytyjskiego wywiadu, który infiltrował niemieckie szeregi i przekazywał cenne informacje aliantom. Pepe był znany ze swojego charakterystycznego wyglądu - zielonej skóry, dużych oczu i szerokiego uśmiechu. Pepe używał swojego uroku i humoru, aby zdobywać zaufanie i sympatię niemieckich oficerów, a następnie wykorzystywał ich słabości i sekrety. Pepe brał udział w wielu ważnych operacjach, takich jak sabotaż fabryki rakiet V2, uwolnienie więźniów z obozu koncentracyjnego Auschwitz i zamach na Hi***ra. Pepe był bohaterem wojny i został odznaczony Krzyżem Wiktorii za swoją odwagę i poświęcenie.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: left;">II Wojna Światowa</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: left;">Działalność na rzecz brytyjskiego wywiadu</h5>
+          </div>
+          </div>
+        </div>
+		<!---->		
+	<div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-none d-lg-block">
+            <h3 class="card-title" style="text-justify: inter-word;text-align: right;">Współczesność</h3>
+            <h5 class="card-subtitle mb-2 text-body-secondary" style="text-justify: inter-word;text-align: right;">Pepe bohaterem internetowych memów</h5>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-lg-none">
+                <h3 class="card-title">Współczesność</h3>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Pepe bohaterem internetowych memów</h5>
+              </div>
+                <div class="container text-center" style="max-width: 450px; ">
+                <img src="img/wspolczesnosc.jpg" class="card-img" alt="Pepe bohaterem internetowych memów">
+                <div class="figure-caption text-end">Wygenerowane przez sztuczną inteligencję</div>
+                </div>
+                <p class="card-text">Żaba Pepe pojawila się w 2005 roku jako postać komiksu <q>Boy’s Club</q> autorstwa Matta Furie. W komiksie Pepe był leniwą i beztroską żabą, która lubiła siedzieć przed komputerem i  grać w gry. W 2008 roku jeden z jej komiksowych gestów - ściśnięcie powiek i uśmiech - został przeniesiony do internetu jako reakcja na różne sytuacje. Od tego momentu Pepe zyskał ogromną popularność i stała się częścią kultury internetowej. Jej obraz był modyfikowany i łączony z innymi postaciami, symbolami i tekstami, tworząc niezliczone wersje mema. Pepe była używana zarówno do wyrażania emocji, jak i do komentowania aktualnych wydarzeń. Niektóre z jej memów były zabawne i niewinne, inne były obraźliwe i kontrowersyjne.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+		<!---->
+        <!---->
+      </div>
+    </div>
+
+    <div class="prawo" id="prawo">
+      <div class="py-5" style="text-justify: inter-word;text-align: justify;">
+      <h1>Kwestie prawne odnośnie tworzonych utworów przez AI</h1>
+        <p>Treść będąca wytworem sztucznej inteligencji nie jest utworem w rozumieniu polskiej ustawy o prawie autorskim i prawach pokrewnych (podobnie jak w innych systemach prawa). Brak ochrony prawnoautorskiej daje możliwość korzystania z dzieła wygenerowanego przez AI zarówno w celach prywatnych, jak i komercyjnych. Jednakże, aby uznać dzieło za utwór w rozumieniu praw autorskich, dzieło to musi być stworzone przez człowieka. Warto pamiętać, że ochrona prawnoautorska może dotyczyć np. kodu źródłowego programu komputerowego lub bazy danych.</p>
+        <div class="figure-caption text-end">Tekst wygenerowany przez sztuczną inteligencję</div>
+      </div>
+    </div>
+
+    <div class="autor" id="autor">
+      <div class="py-5">
+      <h1>O autorze</h1>
+      <div style="text-justify: inter-word;text-align: center;">
+        <p><b>Wiktor Dereszewski</b></p>
+        
+      </div>
+    </div>
+    </div>
+
+    <div class="py-5"></div>
+
+  </div>
+ <!-- CZĘŚĆ SKRYPTOWA, SKRYPT ODPOWIEDZIALNY ZA AUTOMATYCZNY DARK MODE (Z DOKUMENTACJI BS) ORAZ SKRYPTY BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/dark_mode.js"></script>
+</body>
+</html>
